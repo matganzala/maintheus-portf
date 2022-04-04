@@ -1,2 +1,2 @@
-Projeto de portifólio simples realizado com HTML5 E o framework Bulma do CSS;
+Projeto de portifólio simples realizado com HTML5 E o framework Bulma;
 Projeto realizado por Matheus Ganzala Nunes Teixeira
