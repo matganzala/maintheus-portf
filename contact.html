@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio</title>
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/css/all.css"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/css/all.css"></script><!--Link dos icones, FontAwesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">     <!--Link dos icones, FontAwesome-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+    <script src="contact.js"></script>     
     
   </head>
   <body>
@@ -53,7 +54,7 @@
                     <div class="field">
                       <label class="label">Email</label>
                       <div class="control has-icons-left has-icons-right">
-                        <input class="input is text" type="email">
+                        <input class="input is text" onfocus="email()" type="email">
                         <span class="icon is-small">
                           <i class="fas fa-envelope"></i>
                         </span>
@@ -66,15 +67,15 @@
                     <div class="field">
                       <label class="label">Mensagem</label>
                       <div class="control">
-                        <textarea class="textarea"></textarea>
+                        <textarea class="textarea" onfocus="mensage()"></textarea>
                       </div>
                     </div>                    
                     <div class="field is-grouped">
                       <div class="control">
-                        <button class="button is-dark">Enviar</button>
+                        <button class="button is-dark" onclick="sendBtn()">Enviar</button>
                       </div>
                       <div class="control">
-                        <button class="button has-text-grey-dark">Cancelar</button>
+                        <button class="button has-text-grey-dark" onclick="cancelBtn()">Cancelar</button>
                       </div>
                     </div>                    
                   </div>            
